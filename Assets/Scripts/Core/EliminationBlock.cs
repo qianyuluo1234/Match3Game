@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Match3Game.Core
 {
-    public class EliminationBlocks
+    public class EliminationBlock
     {
         private List<Vector2Int> _posList;
         public int id { get; }
@@ -23,7 +23,7 @@ namespace Match3Game.Core
             }
         }
 
-        public EliminationBlocks(int id, List<Vector2Int> posList)
+        public EliminationBlock(int id, List<Vector2Int> posList)
         {
             if (posList == null || posList.Count < 3)
             {
